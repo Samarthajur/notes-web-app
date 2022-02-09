@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Potta+One&family=Fraunces:wght@300&display=swap">
+	<title>Programming Peer</title>
+	<script>
+		function showIDE(x)
+		{
+			document.getElementById('pc').style.display='none';
+			document.getElementById('jc').style.display='none';
+			document.getElementById('cppc').style.display='none';
+			document.getElementById('cc').style.display='none';
+			if(x==0)
+			{
+				document.getElementById('pc').style.display='block';
+			}
+			else if(x==1)
+			{
+				document.getElementById('jc').style.display='block';
+			}
+			else if(x==2)
+			{
+				document.getElementById('cppc').style.display='block';
+			}
+			else if(x==3)
+			{
+				document.getElementById('cc').style.display='block';
+			}
+			return;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar">
+			<div class="home-logo">
+				<a href="index.html"><img src="logos/default4.png" class="web-header"></a>
+			</div>
+			<div class="web-links">
+				<ul>
+					<li><a href="ebook.html">E-Books</a></li>
+					<li><a href="modalpaper.html">Modal Answers/Question Papers</a></li>
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="micropro.html">Simple Projects</a></li>
+					<li><a href="ppts.html">PPTs</a></li>
+					<li><a href="#">Online Compilers</a></li>
+					<!-- <li><a href="pythoncompiler.html">Python Compiler</a></li> -->
+				</ul>
+			</div>
+		</nav>
+		<img src="logos/default5.png" class="web-header-2">
+		<nav class="prolang">
+			<ul>
+				<li><input type="radio" name="language" onclick="showIDE(0)" checked><span>PYTHON</span></li>
+				<li><input type="radio" name="language" onclick="showIDE(1)"><span>JAVA</span></li>
+				<li><input type="radio" name="language" onclick="showIDE(2)"><span>C++</span></li>
+				<li><input type="radio" name="language" onclick="showIDE(3)"><span>C</span></li>
+			</ul>
+		</nav>
+		<div class="compiler">
+			<iframe height="100%" width="100%" src="https://replit.com/@AniketSingh12/python?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" id="pc"></iframe>
+			<iframe height="100%" width="100%" src="https://replit.com/@AniketSingh12/java?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" id="jc"></iframe>		
+			<iframe height="100%" width="100%" src="https://replit.com/@AniketSingh12/cpp?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" id="cppc"></iframe>
+			<iframe height="100%" width="100%" src="https://replit.com/@AniketSingh12/c?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" id="cc"></iframe>
+		</div>
+		<div class="scrolltotop">
+			<a href="#"><span class="fas fa-arrow-up"></span></a>
+		</div>
+	</div>
+	<div class="info">
+		<div class="about">
+			<b>NOTE:</b><br> This website is created as final year project by group of four students. If you want to mention any suggestion or feedback, please contact us through the provided e-mail. Your feedback will appreciated.
+		</div>
+		<div class="contact">
+			<b>CONTACT US:</b> <br>
+			samarthajur@gmail.com
+		</div>
+	</div>
+</body>
+</html>
